@@ -1,0 +1,391 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  padding: 0 4vw;
+  flex-direction: row;
+}
+header img {
+  width: 100px;
+}
+header .hiden-menu {
+  color: white;
+  font-weight: 700;
+  display: none;
+}
+header .hiden-menu .hiden-menu-left {
+  display: flex;
+  justify-content: space-between;
+}
+header .hiden-menu .hiden-menu-left .menu-itens {
+  margin: 10px;
+  font-size: 15px;
+}
+header .hiden-menu .hiden-menu-right {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+header .hiden-menu .hiden-menu-right .menu-itens {
+  margin: 10px;
+}
+header .hiden-menu .hiden-menu-right button {
+  color: #541554;
+  font-weight: 700;
+  padding: 12px 16px;
+}
+@media screen and (min-width: 768px) {
+  header {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.container-page1 {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4vw;
+  justify-content: center;
+  background-color: #541554;
+  font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+  text-align: center;
+}
+.container-page1 h1 {
+  font-size: 2rem;
+  color: white;
+  font-weight: 700;
+  font-size: 47px;
+}
+.container-page1 h1 span {
+  color: #ECB22E;
+}
+.container-page1 h4 {
+  color: white;
+  font-size: 16px;
+  margin: 4px 0 40px;
+  font-weight: 400;
+}
+.container-page1 .content-column {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+@media screen and (min-width: 768px) {
+  .container-page1 .content-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
+.container-page1 .content-column .column-left {
+  flex-direction: column;
+  margin-right: 9px;
+}
+@media screen and (min-width: 768px) {
+  .container-page1 .content-column .column-left {
+    max-width: 700px;
+  }
+}
+.container-page1 .content-column .column-right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .container-page1 .content-column .column-right {
+    max-width: 700px;
+  }
+}
+.container-page1 .content-column .column-right video {
+  max-width: 700px;
+}
+.container-page1 form input {
+  width: 100%;
+  display: inline-block;
+  box-shadow: inset 0 0 0 1px #611f69;
+  background-color: #fff;
+  padding: 19px 40px 20px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.container-page1 form input.correo {
+  color: #541554;
+}
+.container-page1 form .google {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.container-page1 form .google img {
+  width: 49px;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  background-color: white;
+  border-radius: 4px;
+}
+.container-page1 form .google input {
+  background-color: rgb(66, 133, 244);
+  color: white;
+}
+.container-page1 .hiden-info {
+  color: white;
+  margin: 30px 0;
+  display: none;
+}
+@media screen and (min-width: 1020px) {
+  .container-page1 .hiden-info {
+    display: flex;
+  }
+}
+
+/*PAGE 2*/
+.container-page2 {
+  background-color: #F4EDE4;
+  font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+}
+.container-page2 .title {
+  padding: 3rem 0;
+  font-size: 14px;
+  text-align: center;
+}
+.container-page2 .title p {
+  font-weight: 700;
+  line-height: 1.4444;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  margin-bottom: 1rem;
+  font-size: 16;
+}
+.container-page2 .title .container-logos {
+  padding: 0 24px;
+  height: 144px;
+}
+.container-page2 .title .container-logos .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+.container-page2 .title .container-logos .logos img {
+  margin: 10px;
+}
+.container-page2 section {
+  padding: 48px 0;
+}
+@media screen and (min-width: 768px) {
+  .container-page2 section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .container-page2 section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.container-page2 section .video-section {
+  max-height: 400px;
+  max-width: 687px;
+  display: none;
+}
+.container-page2 section img {
+  max-width: 100%;
+  height: auto;
+}
+.container-page2 section .text-section {
+  line-height: 1.4444;
+  font-weight: 450;
+  letter-spacing: normal;
+  margin: 32px 0 0 16px;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .container-page2 section .text-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.container-page2 section .text-section .text {
+  text-align: left;
+  max-width: 600px;
+}
+.container-page2 section .text-section .text h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.container-page2 section .text-section .text p {
+  font-size: 18px;
+}
+.container-page2 section .text-section .text a {
+  text-decoration: none;
+  color: rgb(18, 100, 163);
+}
+.container-page2 section.right {
+  text-align: right;
+  justify-content: flex-end;
+}
+.container-page2 section.right p {
+  text-align: justify;
+}
+@media screen and (min-width: 768px) {
+  .container-page2 section.right .video-section {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1020px) {
+  .container-page2 section.right {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-page2 section.right img {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-page2 section.left .video-section {
+    display: inline-block;
+  }
+  .container-page2 section.left img {
+    display: none;
+  }
+}
+
+.container-page3 {
+  font-family: Slack-Larsseit, "Helvetica Neue", Helvetica, "Segoe UI", Tahoma, Arial, sans-serif;
+}
+.container-page3 .content {
+  margin: 40px;
+  text-align: center;
+}
+.container-page3 h3 {
+  font-weight: 700;
+  line-height: 1.1875;
+  letter-spacing: -0.3px;
+  margin: 32px 0 16px 0;
+  font-size: 2rem;
+}
+.container-page3 p {
+  font-weight: 450;
+  line-height: 1.4444;
+  font-size: 1.125rem;
+}
+.container-page3 .buttons {
+  margin: 16px 0 45px;
+  text-align: center;
+  padding: 30px;
+  width: 95%;
+}
+.container-page3 .video-customer-depo video {
+  width: 90%;
+  margin: 0;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+.container-page3 button {
+  display: block;
+  border-radius: 4px;
+  font-weight: 700;
+  line-height: 1.2857;
+  letter-spacing: 0.8px;
+  padding: 19px 40px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container-page3 button.conoce-slack {
+  color: white;
+  background-color: #541554;
+  border: none;
+}
+.container-page3 button.hablar-equipo {
+  color: #541554;
+  border: 1px solid #541554;
+  background-color: white;
+}
+@media screen and (min-width: 768px) {
+  .container-page3 button {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+.container-page3 .lista-content {
+  margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  width: 100%;
+}
+.container-page3 .lista-content .number {
+  font-size: 52px;
+  color: #541554;
+  margin-bottom: 0.25rem;
+  font-weight: 700;
+  text-align: center;
+}
+.container-page3 .lista-content .info {
+  margin-bottom: 30px;
+  font-size: 13px;
+  margin: 0 90px;
+}
+@media screen and (min-width: 768px) {
+  .container-page3 .lista-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.container-page3 .customer-depo {
+  padding: 2rem;
+  line-height: 1.4444;
+  text-align: left;
+}
+.container-page3 .customer-depo .customer-cote {
+  font-style: italic;
+  font-weight: 200;
+  line-height: 1.417;
+  letter-spacing: -0.3px;
+  margin: 10px;
+  text-align: justify;
+  font-size: 1.25rem;
+}
+.container-page3 .customer-depo .customer-name {
+  font-weight: 700;
+  text-align: left;
+}
+.container-page3 .customer-depo .customer-position {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.container-page3 .customer-depo a {
+  text-decoration: none;
+  color: rgb(18, 100, 163);
+}
+.container-page3 bottom {
+  font-size: 14px;
+  margin: 0 0 16px;
+  padding: 0 0 8px;
+  font-weight: 200;
+  color: #696969;
+}/*# sourceMappingURL=styles.css.map */

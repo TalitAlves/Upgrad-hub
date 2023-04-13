@@ -1,0 +1,541 @@
+$primary-color: #541554;
+$font_family: Slack-Larsseit,"Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+
+$layout_bp_768px: 768px;
+$layout_bp_1020px: 1020px;
+
+@mixin medium-layout {
+    @media screen and (min-width:#{$layout_bp_768px}) {
+        @content;
+    }
+}
+
+@mixin large-layout {
+    @media screen and (min-width:#{$layout_bp_1020px}) {
+        @content;
+    }
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    padding: 0 4vw;
+    flex-direction: row;  
+    
+  
+    img{
+        width: 100px;
+    }
+
+    .hiden-menu{
+        color:white;
+        font-weight: 700;
+        display: none;
+
+               
+        .hiden-menu-left{
+            display: flex;
+            justify-content: space-between;
+
+            .menu-itens{
+                margin:10px;
+                
+                font-size: 15px;
+            }
+        }
+
+        .hiden-menu-right{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            
+            .menu-itens{
+                margin: 10px;
+
+            }
+
+            button{
+                color: $primary-color;
+                font-weight: 700;
+                padding: 12px 16px;;
+                
+            }
+
+
+        }
+    }
+   
+    @include medium-layout(){
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+
+       
+
+    }
+    
+
+}
+
+.container-page1{
+    display: flex;
+    flex-direction: column;
+    padding: 0 4vw;
+    justify-content: center;
+    background-color: $primary-color;
+    font-family: $font_family;
+    text-align: center;
+    
+    
+
+   
+    h1{
+        font-size: 2rem;
+        color:white;
+        font-weight: 700;
+        font-size: 47px;
+      
+
+        span{
+            color:#ECB22E
+        }
+    }
+
+    h4{
+        color: white;
+        font-size: 16px;
+        margin: 4px 0 40px;
+        font-weight: 400;
+    }
+   
+
+
+    .content-column{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        @include medium-layout{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+        
+        }  
+    
+        .column-left{
+        flex-direction: column;
+        margin-right: 9px;
+        
+        @include medium-layout() {   
+            max-width: 700px;
+        }
+       
+
+             
+        }
+
+        .column-right{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            
+           
+            @include medium-layout() {   
+                max-width: 700px;
+            }
+
+            video{
+                max-width: 700px;
+               
+            }
+
+
+        } 
+        
+
+    }
+
+    form{
+        input{
+            width: 100%;
+            display: inline-block;
+            box-shadow: inset 0 0 0 1px #611f69;
+            background-color: #fff;
+            padding: 19px 40px 20px;
+            border-radius: 4px;
+            border: none;
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 14px;
+
+            &.correo{
+                color:$primary-color;
+            
+            }       
+
+        }
+
+        .google{
+            display: flex; 
+            align-items: center;
+            position: relative;
+            width: 100%;
+            
+            
+            
+            & img{
+                width: 49px;
+                position: absolute;
+                top: 4px;
+                bottom: 4px;
+                left: 4px;
+                background-color: white;
+                border-radius: 4px;
+                
+            }
+
+            & input{
+                background-color:rgb(66, 133, 244) ;
+                color: white;
+            }   
+   
+        }   
+    }  
+
+        .hiden-info{
+            color:white;
+            margin: 30px 0 ;
+            display: none;
+
+            @include large-layout(){
+                display: flex;
+            }
+        }
+}
+
+/*PAGE 2*/
+.container-page2{
+    background-color: #F4EDE4;
+    font-family: $font_family;
+
+        
+    .title{
+        padding: 3rem 0;
+        font-size: 14px;
+        text-align: center;
+        
+        p{
+            font-weight: 700;
+            line-height: 1.4444;
+            padding-left: 8vw;
+            padding-right: 8vw;
+            margin-bottom: 1rem;
+            font-size: 16;
+
+        }
+
+        .container-logos{
+
+            padding: 0 24px ;
+            height: 144px;
+
+            .logos{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+                margin: 10px;   
+
+                img{
+                    margin:10px;
+                }
+            }
+        }      
+  
+    } 
+
+
+    section{
+        padding: 48px 0;
+
+        
+    @include medium-layout(){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+
+    @include large-layout(){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    
+    }
+
+    
+
+        .video-section{
+            max-height: 400px;
+            max-width: 687px;
+            display: none;
+
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        
+        }
+    
+        .text-section{
+            line-height: 1.4444;
+            font-weight: 450;
+            letter-spacing: normal;
+            margin: 32px 0  0 16px;
+            display: flex;
+            justify-content: center;
+            
+                     
+
+
+            @include medium-layout(){
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }   
+                
+           
+           .text{
+                text-align: left;
+                max-width: 600px;
+
+           
+
+            h2{
+                font-size: 32px;
+                margin-bottom: 16px;
+                text-align: left;
+            } 
+            
+            p{
+                font-size: 18px;
+            }
+            
+            a{
+                text-decoration: none;
+                color:rgb(18, 100, 163)
+            }
+        }       
+    }
+        &.right{
+            text-align: right;
+            justify-content: flex-end;
+        
+            p{
+                text-align: justify;
+            }
+
+            @include medium-layout{
+                .video-section{
+                    display: inline-block;
+  
+                
+                }
+            
+                
+            @include large-layout(){
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: nowrap;
+                
+            }    
+        
+                img{
+                    display: none;
+                }
+        
+            }
+        }
+
+        &.left{
+
+            @include medium-layout{
+                .video-section{
+                    display: inline-block;
+                
+                }
+            
+                
+        
+                img{
+                    display: none;
+                }
+            }    
+
+        }   
+    }
+}
+
+
+.container-page3{
+    font-family: $font_family;
+
+    .content{
+        margin: 40px;
+        text-align: center;
+    }
+    
+   
+    h3{
+        font-weight: 700;
+        line-height: 1.1875;
+        letter-spacing: -.3px;
+        margin: 32px 0 16px 0;
+        font-size: 2rem;
+    }
+
+    p{
+        font-weight: 450;
+        line-height: 1.4444;
+        font-size: 1.125rem;
+    }
+
+    .buttons{
+        margin:16px 0 45px;
+        text-align: center;
+        padding: 30px;
+        width: 95%; 
+              
+    }
+
+    
+
+    .video-customer-depo video{
+        width: 90%;
+        margin: 0;
+        border-top-right-radius: 500px;
+        border-bottom-right-radius: 500px;
+    }
+    
+    button{
+        display: block;
+        border-radius: 4px;
+        font-weight: 700;
+        line-height: 1.2857;
+        letter-spacing: .8px;
+        padding: 19px 40px 20px;
+        width:100%;
+        margin-bottom: 20px;
+      
+
+        &.conoce-slack{
+            color: white;
+            background-color: $primary-color;
+            border: none;
+        }
+
+        &.hablar-equipo{
+            color:$primary-color;
+            border: 1px solid $primary-color;
+            background-color: white;
+
+        }
+        
+    @include medium-layout(){
+        width: 65%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    }
+
+
+    .lista-content{
+        margin-bottom: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+        width: 100%;
+        
+                   
+            .number{
+                font-size: 52px;
+                color: $primary-color;
+                margin-bottom: 0.25rem;
+                font-weight: 700;
+                text-align: center;
+                
+                
+            
+            }
+            .info{
+                margin-bottom: 30px;
+                font-size: 13px;
+                margin: 0 90px;
+                      
+            }  
+            
+            
+
+            @include medium-layout(){
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+             }    
+        }
+         
+           
+                                  
+     
+
+    .customer-depo{
+        padding: 2rem;
+        line-height: 1.4444;
+        text-align: left;
+        
+
+        .customer-cote{
+            font-style: italic;
+            font-weight: 200;
+            line-height: 1.417;
+            letter-spacing: -.3px;
+            margin: 10px;
+            text-align: justify;
+            font-size: 1.25rem;
+        }
+
+        .customer-name{
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .customer-position{
+            text-align: left;
+            margin-bottom: 20px;
+        }
+       
+        a{
+            text-decoration: none;
+            color:rgb(18, 100, 163);
+            
+        }
+
+      
+    }
+
+    bottom{
+        font-size: 14px;
+        margin: 0 0 16px;
+        padding: 0 0 8px;
+        font-weight: 200;
+        color: #696969
+    }
+    
+}
